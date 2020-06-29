@@ -21,16 +21,6 @@ def create_folder_structure():
     return sub_dir
 
 
-def get_encoded_face(input_image):
-    """
-    Encodes the given image
-    :param input_image: Image containing face
-    :return: face encoding
-    """
-    numpy_image = fr.load_image_file(input_image)
-    return fr.face_encodings(numpy_image)[0]
-
-
 def get_pri_face():
     """
     returns primary face used for comparision
